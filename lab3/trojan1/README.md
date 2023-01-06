@@ -1,0 +1,15 @@
+# Lab3 - trojan1
+
+## 环境配置
+
+Windows 11 安装 WireShark。
+
+## 分析过程
+
+使用 WireShark 打开 `L1.pcap` 数据文件。使用 WireShark 的流追踪功能，右键选择“追踪流 > TCP流”，如下图所示，
+
+![wireshark_follow_stream_menu](assets/wireshark_follow_stream_menu.png)
+
+发现了三个 TCP 流信息，查看后发现 flag 信息在第二个 TCP 流中，如下图所示。
+
+![flag_in_tcp_stream](assets/flag_in_tcp_stream.png)
